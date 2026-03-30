@@ -6,7 +6,7 @@ function Timer() {
 
   useEffect(() => {
     setInterval(() => {
-      setCount((prev) => prev  );
+      setCount((prev) => prev   );
     }, 1000);
   }, []);
 

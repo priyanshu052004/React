@@ -23,8 +23,6 @@ function Users() {
             <th>Email</th>
             <th>City</th>
           </tr>
-
-
         </thead>
         <tbody>
           {users.map((U)=>(
@@ -42,9 +40,6 @@ function Users() {
 
 
         </tbody>
-
-
-
 
       </table>
       
