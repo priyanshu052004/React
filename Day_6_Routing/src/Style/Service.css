@@ -1,0 +1,17 @@
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
