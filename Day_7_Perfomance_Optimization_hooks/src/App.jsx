@@ -3,6 +3,7 @@ import ChildMemo from "./Components/ChildMemo";
 import ChildCallback from "./Components/ChildCallback";
 import ChildMemoValue from "./Components/ChildMemoValue";
 import ChildRef from "./Components/ChildRef";
+import UseRender from "./Components/UseRender";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -43,6 +44,19 @@ function App() {
 
       {/* useRef */}
       <ChildRef />
+
+      <h1>Use Render</h1>
+      <UseRender />
+
+      
+
+
+
+
+
+
+
+
     </div>
   );
 }
