@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "strict": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@kitajs/html",
@@ -16,8 +17,7 @@
     "moduleResolution": "bundler",
     "moduleDetection": "force",
     "allowJs": true,
-    "checkJs": true,
-    "types": ["@kitajs/html/htmx.d.ts", "@kitajs/html/alpine.d.ts"]
+    "checkJs": true
   },
   "include": ["src"]
 }
