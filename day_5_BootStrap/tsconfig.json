@@ -5,8 +5,8 @@
     "jsxImportSource": "@kitajs/html",
     "plugins": [{ "name": "@kitajs/ts-html-plugin" }],
     "noEmit": true,
-    "baseUrl": "./",
-    "rootDir": "./",
+    "baseUrl": "",
+    "rootDir": "",
     "paths": {
       "$/*": ["src/*"]
     },
