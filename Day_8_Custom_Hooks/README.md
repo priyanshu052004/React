@@ -1,16 +1,79 @@
-# React + Vite
+Custom Hooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+React Custom Hooks - Notes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Today I Learned:
+Today I learned about Custom Hooks in React.
+Custom hooks help to reuse logic across multiple components and make code clean and maintainable.
 
-## React Compiler
+--------------------------------------------------
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+What is Custom Hook?
 
-## Expanding the ESLint configuration
+A custom hook is a normal JavaScript function that uses React hooks (like useState, useEffect) and allows us to reuse logic.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Rule:
+- Name must start with "use"
+- Can use other hooks inside
+
+--------------------------------------------------
+
+Why use Custom Hooks?
+
+- Reuse logic
+- Avoid code duplication
+- Make code clean and readable
+- Easy to maintain
+
+--------------------------------------------------
+
+Basic Example (useCounter Hook)
+
+function useCounter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return { count, increment };
+}
+
+--------------------------------------------------
+
+Usage in Component
+
+const { count, increment } = useCounter();
+
+--------------------------------------------------
+
+Important Points
+
+- Each component gets its own state
+- Logic is shared, not the state
+- Hooks must be called at top level
+
+--------------------------------------------------
+
+Real Use Cases
+
+- API fetching (useFetch)
+- Form handling
+- Authentication
+- Window resize tracking
+- Local storage
+
+--------------------------------------------------
+
+Final Understanding
+
+- Custom hooks help in code reusability
+- Makes components cleaner
+- Useful in large projects
+
+--------------------------------------------------
+
+One Line Summary
+
+Custom hooks allow us to reuse logic across multiple React components efficiently.
